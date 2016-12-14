@@ -1,5 +1,5 @@
 import { Component, ViewChild, ViewContainerRef } from '@angular/core';
-import {MdSidenav, MdDialog, MdDialogConfig} from "@angular/material";
+import {MdSidenav, MdDialog, MdDialogConfig} from '@angular/material';
 
 @Component({
   selector: 'settings-dialog',
