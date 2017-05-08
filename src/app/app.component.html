@@ -13,21 +13,21 @@
     <button md-menu-item (click)="isDarkTheme=!isDarkTheme">Toggle theme</button>
     <button md-menu-item>Help</button>
   </md-menu>
-  <md-sidenav-layout>
+  <md-sidenav-container>
     <md-sidenav align="end" mode="side" #sidenav>
       <md-tab-group>
         <md-tab>
-          <template md-tab-label>Details</template>
-          <template md-tab-content>
+          <ng-template md-tab-label>Details</ng-template>
+
             <p>Name: {{currentDog.name}}</p>
             <p>Human: {{currentDog.human}}</p>
             <p>Age: {{currentDog.age}}</p>
             <button md-raised-button (click)="sidenav.close()" color="accent">CLOSE</button>
-          </template>
+
         </md-tab>
         <md-tab>
-          <template md-tab-label>Feed</template>
-          <template md-tab-content></template>
+          <ng-template md-tab-label>Feed</ng-template>
+          <p>Lorem Ipsum</p>
         </md-tab>
       </md-tab-group>
     </md-sidenav>
@@ -43,5 +43,5 @@
         </md-grid-tile-footer>
       </md-grid-tile>
     </md-grid-list>
-  </md-sidenav-layout>
+  </md-sidenav-container>
 </div>
