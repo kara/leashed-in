@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.24",
+    "version": "1.0.2",
     "name": "leashed-in"
   },
   "apps": [
@@ -24,8 +24,8 @@
       "scripts": [
         "../node_modules/hammerjs/hammer.min.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
