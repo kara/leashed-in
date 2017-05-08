@@ -1,19 +1,20 @@
-@import '~@angular/material/core/theming/all-theme';
+@import '~@angular/material/_theming.scss';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-@include md-core();
+@include mat-core();
 
-$primary: md-palette($md-cyan);
-$accent: md-palette($md-amber);
+$primary: mat-palette($mat-cyan);
+$accent: mat-palette($mat-amber);
 
-$theme: md-light-theme($primary, $accent);
+$theme: mat-light-theme($primary, $accent);
 
 @include angular-material-theme($theme);
 
 .dark-theme {
-  $dark-p: md-palette($md-pink, 700);
-  $dark-a: md-palette($md-blue-grey);
+  $dark-p: mat-palette($mat-pink, 700);
+  $dark-a: mat-palette($mat-blue-grey);
 
-  $dark-t: md-dark-theme($dark-p, $dark-a);
+  $dark-t: mat-dark-theme($dark-p, $dark-a);
 
   @include angular-material-theme($dark-t);
 }
